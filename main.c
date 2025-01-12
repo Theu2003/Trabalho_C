@@ -8,8 +8,8 @@ typedef struct {
     char modelo[50];
     char fabricante[50];
     float valorDiario;
-    int diasAlugados; // Novo campo para armazenar a quantidade de dias
-    float valorTotal; // Novo campo para armazenar o valor total calculado
+    int diasAlugados;
+    float valorTotal;
 } Maquina;
 
 void preencherVetor(Maquina *vetor, int tamanho) {
@@ -27,7 +27,6 @@ void preencherVetor(Maquina *vetor, int tamanho) {
         printf("Digite o numero de dias de aluguel da maquina %d: ", i + 1);
         scanf("%d", &vetor[i].diasAlugados);
 
-        // Calcula o valor total do aluguel
         vetor[i].valorTotal = vetor[i].valorDiario * vetor[i].diasAlugados;
         printf("Valor total do aluguel: %.2f\n", vetor[i].valorTotal);
     }
@@ -108,7 +107,6 @@ int main() {
     int opcao = 0, numMaquinas = 0;
     Maquina *maquinas = NULL;
 
-    // Executa a opção 1 automaticamente no início
     printf("Informe o numero de maquinas: ");
     scanf("%d", &numMaquinas);
     maquinas = realloc(maquinas, numMaquinas * sizeof(Maquina));
