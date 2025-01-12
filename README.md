@@ -1,4 +1,3 @@
-# Mateus Martins Peres
 # Gerenciamento de Máquinas de Aluguel
 
 Este programa em C permite gerenciar informações sobre máquinas de aluguel. Ele permite cadastrar máquinas, buscar por registro, listar máquinas por tipo e calcular o valor total do aluguel com base nos dias alugados e no valor diário.
